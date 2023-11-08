@@ -1,0 +1,269 @@
+*{
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  padding-left: 13%;
+  padding-right: 13%;
+}
+
+.container-restaurant{
+  padding-left: 11.5%;
+  padding-right: 11.5%;
+}
+body{
+  font-family: 'DM Sans', sans-serif;
+}
+
+.hero-section{
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(55, 55, 55, 0.5)), url(./../public/images/hero-image_2.jpg);
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeats;
+  background-attachment: fixed;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero-section h1, .hero-section p{
+  color: white;
+}
+
+.hero-section a{
+  margin-top: 15px;
+  padding: 13px 15px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: 200;
+}
+
+nav{
+  padding-top: 20px;
+  padding-bottom: 15px;
+  position: absolute;
+  top: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 77%;
+  justify-content: space-between;
+  background: transparent;
+}
+
+ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 12px;
+}
+ul{
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-brand a{
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  font-size: 22px;
+  padding: 10px;
+}
+
+.restaurant-item{
+  max-width: 270px;
+  padding: 20px 25px;
+  box-shadow: -1px 1px 25px -12px rgba(0, 0, 0, 0.75);
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 20px;
+}
+
+.restaurant-item img{
+  border-radius: 8px;
+}
+
+.description{
+  display: flex;
+  justify-content: space-between;
+}
+
+.all-restaurant{
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bold-text{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.hidden-description{
+  overflow: hidden;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+
+.restaurant-item p:nth-child(3){
+  margin-bottom: 15px;
+}
+
+h3{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid royalblue;
+  width: max-content;
+  margin: auto;
+}
+
+.burger-menu{
+  display: none;
+}
+
+.skip-content{
+  position: absolute;
+  top: -55px;
+  left: 0;
+  padding: 15px;
+  background-color: white;
+  color: black;
+  z-index: 100;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.skip-content:focus{
+  top: 10px;
+  left: 5px;
+}
+
+.container-footer{
+  margin-top:50px ;
+  background-color: rgb(30, 33, 42);
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  color: white;
+  height: 20vh;
+}
+
+.container-footer p{
+  padding-top: 25px;
+}
+
+
+
+@media only screen and (max-width: 1200px){
+  .restaurant-item{
+    max-width: 250px;
+  }
+  .restaurant-item img{
+    width: 200px;
+  }
+
+}
+@media only screen and (min-width: 1200px){
+  .hero-section{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1039px) {
+  .restaurant-item {
+    max-width: 314px;
+  }
+
+  .restaurant-item img {
+    width: 265px;
+  }
+
+}
+
+@media only screen and (max-width: 849px) {
+  .restaurant-item {
+    max-width: 275px;
+  }
+
+  .restaurant-item img {
+    width: 230px;
+  }
+
+}
+
+@media only screen and (max-width: 746px) {
+  .restaurant-item {
+    max-width: 300px;
+  }
+
+  .restaurant-item img {
+    width: 255px;
+  }
+
+  .container{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  nav{
+    width: 90%;
+  }
+
+}
+@media only screen and (max-width: 580px) {
+  .burger-menu{
+    display: block;
+    border: none;
+    background-color: transparent;
+  }
+  .nav-list{
+    display: none;
+  }
+  .hero-section h1,
+  .hero-section p {
+    text-align: center;
+  }
+  nav{
+    width: 85%;
+  }
+  .container{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .list-menu-mobile{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    position: absolute;
+    height: 100vh;
+    color: black;
+    padding: 10px;
+    transition: .4s all;
+  }
+
+  ul li a {
+    color: black;
+    display: flex;
+  }
+
+}
+
+
