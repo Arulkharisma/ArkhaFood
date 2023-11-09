@@ -18,13 +18,13 @@ function allRestaurant(data) {
     data.restaurants.forEach((restaurant) => {
         restaurantItem += `
       <div class="restaurant-item" tabindex="0">
-            <img tabindex="0" src="${restaurant.pictureId}" width="220px" alt="${restaurant.name}">
-            <div class="description" tabindex="0">
+            <img src="${restaurant.pictureId}" width="220px" alt="${restaurant.name}">
+            <div class="description">
               <p class="bold-text">${restaurant.name}</p>
               <p class="bold-text"><i class="bi bi-star-fill"></i> ${restaurant.rating}</p>
             </div>
-            <p tabindex="0">${restaurant.city}</p>
-            <p class="hidden-description" tabindex="0">${restaurant.description}</p>
+            <p>${restaurant.city}</p>
+            <p class="hidden-description">${restaurant.description}</p>
           </div>
       `;
     });
