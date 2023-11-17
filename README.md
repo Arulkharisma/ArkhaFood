@@ -1,7 +1,7 @@
 # ArkhaFood
 
-proyek ini adalah submission pertama dari kelas web expert di DICODING INDONESIA.<br>
-Proyek ini dibuat dengan tujuan utama untuk mengimplementasikan prinsip-prinsip aksesibilitas agar ramah dan mudah digunakan bagi pengguna disabilitas.
+proyek ini adalah submission pertama dan kedua dari kelas web expert di DICODING INDONESIA.<br>
+Proyek ini dibuat dengan tujuan utama untuk mengimplementasikan prinsip-prinsip aksesibilitas agar ramah dan mudah digunakan bagi pengguna disabilitas dan juga sudah menerapkan PWA (Progresive Web Apps)
 
 ## Demo
 Untuk melihat demo dari proyek ini silahkan akses -> https://arkha-food.vercel.app/
