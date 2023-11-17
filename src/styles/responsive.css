@@ -1,0 +1,136 @@
+@media only screen and (max-width: 1200px) {
+    .restaurant-item {
+        max-width: 250px;
+    }
+
+    .restaurant-item img {
+        width: 200px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero-section {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1039px) {
+    .restaurant-item {
+        max-width: 314px;
+    }
+
+    .restaurant-item img {
+        width: 265px;
+    }
+
+    .restaurant-content{
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 849px) {
+    .restaurant-item {
+        max-width: 275px;
+    }
+
+    .restaurant-item img {
+        width: 230px;
+    }
+
+}
+
+@media only screen and (max-width: 746px) {
+    .restaurant-item {
+        max-width: 300px;
+    }
+
+    .restaurant-item img {
+        width: 255px;
+    }
+
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    nav {
+        width: 90%;
+    }
+
+    .second-navbar{
+        width: 100%;
+    }
+
+    .menu-restaurant{
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+    .burger-menu {
+        display: block;
+        border: none;
+        background-color: transparent;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .hero-section h1,
+    .hero-section p {
+        text-align: center;
+    }
+
+    nav {
+        width: 85%;
+    }
+
+    .second-navbar{
+        width: 100%;
+    }
+
+    .bi-list::before{
+        position: relative;
+        z-index: 999;
+        top: -7px;
+        left: 15px;
+    }
+
+    .container, .second-navbar {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .list-menu-mobile {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background-color: white;
+        top: 0;
+        left: -30px;
+        bottom: 0;
+        display: block;
+        position: absolute;
+        height: 100vh;
+        color: black;
+        padding: 11px;
+        transition: all 1s;
+        z-index: 99;
+    }
+
+    ul li a {
+        color: black;
+        display: flex;
+        border-bottom: 1px solid;
+    }
+
+    ul li:nth-child(1) a{
+        margin-top: 20px;
+    }
+
+}
