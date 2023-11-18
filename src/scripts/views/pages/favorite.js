@@ -6,15 +6,16 @@ const Favorite = {
     return `
     <nav id="navbar" class="second-navbar">
       <div class="nav-brand">
-        <a href="/"><img src="./navbar-logo.png" alt=""><span>Arkha</span><span>Food</span></a>
+      <a href="/"><img src="./navbar-logo.png" alt=""><span>Arkha</span><span>Food</span></a>
       </div>
       <ul class="nav-list">
         <li><a href="/">Home</a></li>
         <li><a href="#/favorite">Favorite</a></li>
+        <li><a href="https://www.linkedin.com/in/arulkharisma/">About Us</a></li>
       </ul>
     </nav>
       <div class="container-restaurant">
-          <h3 id="list-restaurant">Favorite Restaurant</h3>
+          <h3 id="content-favorite">Favorite Restaurant</h3>
           <div class="favorite-restaurant" id="favorite-restaurant">
 
           </div>
@@ -30,8 +31,6 @@ const Favorite = {
     });
     const herosection = document.querySelector('.hero-section');
     herosection.style.display = 'none';
-    const skipContent = document.querySelector('.skip-content');
-    skipContent.style.display = 'none';
   },
 };
 

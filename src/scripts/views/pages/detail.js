@@ -13,8 +13,10 @@ const Detail = {
       <ul class="nav-list">
         <li><a href="/">Home</a></li>
         <li><a href="#/favorite">Favorite</a></li>
+        <li><a href="https://www.linkedin.com/in/arulkharisma/">About Us</a></li>
       </ul>
     </nav>
+    <h3 id="detail-restaurant">Detail</h3>
     <div id="restaurant-detail"></div>
     <div id="likeButtonContainer"></div>
     `;
@@ -40,8 +42,6 @@ const Detail = {
 
     const herosection = document.querySelector('.hero-section');
     herosection.style.display = 'none';
-    const skipContent = document.querySelector('.skip-content');
-    skipContent.style.display = 'none';
   },
 };
 

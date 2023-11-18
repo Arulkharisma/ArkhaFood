@@ -21,3 +21,10 @@ window.addEventListener('load', () => {
   app.renderPage();
   swRegister();
 });
+const skipToContent = document.querySelector('.skip-content');
+const maincontent = document.querySelector('#mainContent');
+
+skipToContent.addEventListener('click', (event) => {
+  event.preventDefault();
+  maincontent.focus();
+});
