@@ -25,6 +25,27 @@ const createRestaurantDetailTemplate = (restaurant) => `
 </div>
 <div class="overview">
 
+<h3 style="margin: 45px 0px 18px 0px;">Reviews</h3>
+
+<div class="detail-review">
+    ${restaurant.customerReviews
+    .slice(0, 3) // Menggunakan slice untuk mendapatkan tiga review pertama
+    .map(
+      (review) => `
+        <div class="review-item" tabindex="0">
+            <p class="bold-text">${review.name}</p>
+            <p>${review.review}</p>
+            <p class="review-date">${review.date}</p>
+        </div>
+      `,
+    )
+    .join('')}
+</div>
+</div>
+</div>
+`;
+
+/* =======code untuk mengambil data menu restaurant ==========
 <h3 style="margin:50px auto 18px auto;">Menu</h3>
 
   <div class="menu-restaurant">
@@ -57,27 +78,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
     .join('')}
     </ul>
     </div>
-</div>
-
-<h3 style="margin: 45px 0px 18px 0px;">Reviews</h3>
-
-<div class="detail-review">
-    ${restaurant.customerReviews
-    .slice(0, 3) // Menggunakan slice untuk mendapatkan tiga review pertama
-    .map(
-      (review) => `
-        <div class="review-item" tabindex="0">
-            <p class="bold-text">${review.name}</p>
-            <p>${review.review}</p>
-            <p class="review-date">${review.date}</p>
-        </div>
-      `,
-    )
-    .join('')}
-</div>
-</div>
-</div>
-`;
+</div> */
 
 const createRestaurantItemTemplate = (restaurant) => `
     <div class="restaurant-item" tabindex="0">
